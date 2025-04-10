@@ -1,0 +1,100 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Recipe Cards Section */
+main {
+    padding: 20px;
+}
+
+#recipes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between cards */
+    justify-content: space-around;
+}
+
+.recipe-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 250px; /* Set fixed width for cards */
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.recipe-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.recipe-item h2 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.recipe-item p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.recipe-item a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.recipe-item:hover {
+    transform: translateY(-5px); /* Hover effect for card */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #recipes {
+        justify-content: center;
+    }
+
+    .recipe-item {
+        width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .recipe-item {
+        width: 100%; /* Full-width cards on small screens */
+    }
+}
