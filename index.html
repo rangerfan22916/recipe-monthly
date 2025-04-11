@@ -4,209 +4,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe Hub</title>
+    <title>Recipe Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <h1>Recipe Hub</h1>
-        <nav>
-            <ul>
-                <li><a href="#" onclick="filterCategory('all')">All Recipes</a></li>
-                <li><a href="#" onclick="filterCategory('breakfast')">Breakfast</a></li>
-                <li><a href="#" onclick="filterCategory('lunch')">Lunch</a></li>
-                <li><a href="#" onclick="filterCategory('dinner')">Dinner</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Recipe Wonderland</h1>
+            <nav>
+                <ul>
+                    <li><a href="#appetizers">Appetizers</a></li>
+                    <li><a href="#breakfast">Breakfast</a></li>
+                    <li><a href="#lunch">Lunch</a></li>
+                    <li><a href="#dinner">Dinner</a></li>
+                    <li><a href="#dessert">Desserts</a></li>
+                    <li><a href="#non-alcoholic">Drinks</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section id="recipes">
-            <!-- Breakfast Recipes -->
-            <div class="recipe-item breakfast">
-                <img src="https://via.placeholder.com/400x300" alt="Pancakes">
-                <h2>Pancakes</h2>
-                <p>Fluffy pancakes served with syrup and fresh berries.</p>
-                <a href="https://www.foodnetwork.com/recipes/food-network-kitchen/pancakes-recipe-2044126">Full
+        <section id="appetizers">
+            <h2>Appetizers</h2>
+            <div class="recipe-card appetizers">
+                <img src="https://www.example.com/bruschetta.jpg" alt="Bruschetta">
+                <h3>Bruschetta</h3>
+                <a href="https://www.allrecipes.com/recipe/54165/balsamic-bruschetta/" target="_blank">View Recipe</a>
+            </div>
+            <div class="recipe-card appetizers">
+                <img src="https://www.example.com/deviled-eggs.jpg" alt="Deviled Eggs">
+                <h3>Deviled Eggs</h3>
+                <a href="https://www.allrecipes.com/recipe/222589/simple-deviled-eggs/" target="_blank">View Recipe</a>
+            </div>
+            <div class="recipe-card appetizers">
+                <img src="https://www.example.com/cheese-platter.jpg" alt="Cheese Platter">
+                <h3>Wonton Wrapper Appetizers</h3>
+                <a href="https://www.allrecipes.com/recipe/20883/won-ton-wrapper-appetizers/" target="_blank">View
                     Recipe</a>
             </div>
-            <div class="recipe-item breakfast">
-                <img src="https://via.placeholder.com/400x300" alt="Omelette">
-                <h2>Omelette</h2>
-                <p>Egg omelette with cheese, mushrooms, and spinach.</p>
-                <a href="https://www.allrecipes.com/recipe/222618/simple-omelette/">Full Recipe</a>
+            <div class="recipe-card appetizers">
+                <img src="https://www.example.com/guacamole.jpg" alt="Guacamole">
+                <h3>Guacamole</h3>
+                <a href="https://www.allrecipes.com/recipe/14231/guacamole/" target="_blank">View Recipe</a>
             </div>
-            <div class="recipe-item breakfast">
-                <img src="https://via.placeholder.com/400x300" alt="Smoothie Bowl">
-                <h2>Smoothie Bowl</h2>
-                <p>A refreshing smoothie topped with granola and fruit.</p>
-                <a href="https://www.foodnetwork.com/recipes/food-network-kitchen/smoothie-bowl-recipe-2047795">Full
+            <div class="recipe-card appetizers">
+                <img src="https://www.example.com/spring-rolls.jpg" alt="Spring Rolls">
+                <h3>Spring Rolls</h3>
+                <a href="https://www.allrecipes.com/recipe/26706/baked-pork-spring-rolls/" target="_blank">View
                     Recipe</a>
             </div>
-            <div class="recipe-item breakfast">
-                <img src="https://via.placeholder.com/400x300" alt="French Toast">
-                <h2>French Toast</h2>
-                <p>Golden-brown French toast topped with powdered sugar.</p>
-                <a href="https://www.allrecipes.com/recipe/13162/french-toast/">Full Recipe</a>
-            </div>
-            <div class="recipe-item breakfast">
-                <img src="https://via.placeholder.com/400x300" alt="Avocado Toast">
-                <h2>Avocado Toast</h2>
-                <p>Mashed avocado on toasted bread, with a sprinkle of salt and pepper.</p>
-                <a href="https://www.allrecipes.com/recipe/242059/avocado-toast/">Full Recipe</a>
-            </div>
-            <div class="recipe-item breakfast">
-                <img src="https://via.placeholder.com/400x300" alt="Granola with Yogurt">
-                <h2>Granola with Yogurt</h2>
-                <p>Crunchy granola paired with creamy yogurt and fresh fruit.</p>
-                <a href="https://www.foodnetwork.com/recipes/food-network-kitchen/granola-recipe-2011547">Full
-                    Recipe</a>
-            </div>
-            <div class="recipe-item breakfast">
-                <img src="https://via.placeholder.com/400x300" alt="Chia Pudding">
-                <h2>Chia Pudding</h2>
-                <p>Chia seeds soaked overnight in almond milk, topped with fruit.</p>
-                <a href="https://www.allrecipes.com/recipe/245343/chia-seed-pudding/">Full Recipe</a>
-            </div>
-            <div class="recipe-item breakfast">
-                <img src="https://via.placeholder.com/400x300" alt="Egg Muffins">
-                <h2>Egg Muffins</h2>
-                <p>Baked egg muffins with spinach, cheese, and ham.</p>
-                <a href="https://www.allrecipes.com/recipe/227247/egg-muffins/">Full Recipe</a>
-            </div>
-            <div class="recipe-item breakfast">
-                <img src="https://via.placeholder.com/400x300" alt="Breakfast Burrito">
-                <h2>Breakfast Burrito</h2>
-                <p>Scrambled eggs, bacon, and cheese wrapped in a tortilla.</p>
-                <a href="https://www.allrecipes.com/recipe/231220/breakfast-burrito/">Full Recipe</a>
-            </div>
-            <div class="recipe-item breakfast">
-                <img src="https://via.placeholder.com/400x300" alt="Cinnamon Rolls">
-                <h2>Cinnamon Rolls</h2>
-                <p>Soft, sweet rolls with a cinnamon filling and icing.</p>
-                <a href="https://www.allrecipes.com/recipe/14712/cinnamon-rolls/">Full Recipe</a>
-            </div>
+        </section>
 
-            <!-- Lunch Recipes -->
-            <div class="recipe-item lunch">
-                <img src="https://via.placeholder.com/400x300" alt="Chicken Salad">
-                <h2>Chicken Salad</h2>
-                <p>Grilled chicken, mixed greens, pickles, and a squeeze of lemon.</p>
-                <a href="https://www.foodnetwork.com/recipes/food-network-kitchen/tuna-salad-recipe-2011610">Full
+        <section id="breakfast">
+            <h2>Breakfast</h2>
+            <div class="recipe-card breakfast">
+                <img src="https://www.example.com/pancakes.jpg" alt="Pancakes">
+                <h3>Pancakes</h3>
+                <a href="https://www.allrecipes.com/recipe/24530/buttermilk-pancakes-ii/" target="_blank">View
                     Recipe</a>
             </div>
-            <div class="recipe-item lunch">
-                <img src="https://via.placeholder.com/400x300" alt="Veggie Wrap">
-                <h2>Veggie Wrap</h2>
-                <p>Colorful vegetables wrapped in a tortilla with hummus and feta.</p>
-                <a href="https://www.allrecipes.com/recipe/244121/vegetarian-wraps/">Full Recipe</a>
+            <div class="recipe-card breakfast">
+                <img src="https://www.example.com/omelette.jpg" alt="Omelette">
+                <h3>Omelette</h3>
+                <a href="https://www.allrecipes.com/recipe/257918/chef-johns-french-omelette/" target="_blank">View
+                    Recipe</a>
             </div>
-            <div class="recipe-item lunch">
-                <img src="https://via.placeholder.com/400x300" alt="Grilled Cheese">
-                <h2>Grilled Cheese</h2>
-                <p>Crispy toast with melted cheese in between.</p>
-                <a href="https://www.allrecipes.com/recipe/23891/grilled-cheese-sandwich/">Full Recipe</a>
+            <div class="recipe-card breakfast">
+                <img src="https://www.example.com/waffles.jpg" alt="Waffles">
+                <h3>Waffles</h3>
+                <a href="https://www.allrecipes.com/recipe/22180/waffles-i/" target="_blank">View Recipe</a>
             </div>
-            <div class="recipe-item lunch">
-                <img src="https://via.placeholder.com/400x300" alt="Caesar Salad">
-                <h2>Caesar Salad</h2>
-                <p>Romaine lettuce, croutons, parmesan cheese, and Caesar dressing.</p>
-                <a href="https://www.allrecipes.com/recipe/14799/caesar-salad-dressing/">Full Recipe</a>
+            <div class="recipe-card breakfast">
+                <img src="https://www.example.com/smoothie-bowl.jpg" alt="Smoothie Bowl">
+                <h3>Smoothie Bowl</h3>
+                <a href="https://www.allrecipes.com/recipes/17884/breakfast-and-brunch/breakfast-bowls/smoothie/"
+                    target="_blank">View Recipe</a>
             </div>
-            <div class="recipe-item lunch">
-                <img src="https://via.placeholder.com/400x300" alt="Chicken Quesadilla">
-                <h2>Chicken Quesadilla</h2>
-                <p>Grilled chicken and melted cheese in a flour tortilla.</p>
-                <a href="https://www.allrecipes.com/recipe/235634/chicken-quesadillas/">Full Recipe</a>
+            <div class="recipe-card breakfast">
+                <img src="https://www.example.com/avocado-toast.jpg" alt="Avocado Toast">
+                <h3>Avocado Toast</h3>
+                <a href="https://www.allrecipes.com/recipe/246803/avocado-toast-vegan/" target="_blank">View Recipe</a>
             </div>
-            <div class="recipe-item lunch">
-                <img src="https://via.placeholder.com/400x300" alt="Tuna Salad">
-                <h2>Tuna Salad</h2>
-                <p>Tuna mixed with mayo and fresh vegetables.</p>
-                <a href="https://www.allrecipes.com/recipe/172047/tuna-salad/">Full Recipe</a>
-            </div>
-            <div class="recipe-item lunch">
-                <img src="https://via.placeholder.com/400x300" alt="Tomato Soup">
-                <h2>Tomato Soup</h2>
-                <p>Classic creamy tomato soup with a touch of basil.</p>
-                <a href="https://www.allrecipes.com/recipe/26335/the-best-tomato-soup/">Full Recipe</a>
-            </div>
-            <div class="recipe-item lunch">
-                <img src="https://via.placeholder.com/400x300" alt="Chicken Wrap">
-                <h2>Chicken Wrap</h2>
-                <p>Grilled chicken with lettuce, tomato, and dressing wrapped in a tortilla.</p>
-                <a href="https://www.allrecipes.com/recipe/232050/chicken-wraps/">Full Recipe</a>
-            </div>
-            <div class="recipe-item lunch">
-                <img src="https://via.placeholder.com/400x300" alt="Falafel">
-                <h2>Falafel</h2>
-                <p>Crunchy chickpea patties served in pita bread with vegetables.</p>
-                <a href="https://www.allrecipes.com/recipe/222664/falafel/">Full Recipe</a>
-            </div>
+        </section>
 
-            <!-- Dinner Recipes -->
-            <div class="recipe-item dinner">
-                <img src="https://via.placeholder.com/400x300" alt="Spaghetti Bolognese">
-                <h2>Spaghetti Bolognese</h2>
-                <p>Rich and savory meat sauce served over pasta.</p>
-                <a href="https://www.foodnetwork.com/recipes/food-network-kitchen/spaghetti-bolognese-recipe-2106609">Full
-                    Recipe</a>
+        <section id="lunch">
+            <h2>Lunch</h2>
+            <div class="recipe-card lunch">
+                <img src="https://www.example.com/grilled-chicken-salad.jpg" alt="Grilled Chicken Salad">
+                <h3>Grilled Chicken Salad</h3>
+                <a href="https://www.example.com/grilled-chicken-salad-recipe" target="_blank">View Recipe</a>
             </div>
-            <div class="recipe-item dinner">
-                <img src="https://via.placeholder.com/400x300" alt="Grilled Salmon">
-                <h2>Grilled Salmon</h2>
-                <p>Flaky grilled salmon served with lemon and herbs.</p>
-                <a href="https://www.allrecipes.com/recipe/14497/grilled-salmon-i/">Full Recipe</a>
+            <div class="recipe-card lunch">
+                <img src="https://www.example.com/vegetable-soup.jpg" alt="Vegetable Soup">
+                <h3>Vegetable Soup</h3>
+                <a href="https://www.example.com/vegetable-soup-recipe" target="_blank">View Recipe</a>
             </div>
-            <div class="recipe-item dinner">
-                <img src="https://via.placeholder.com/400x300" alt="Chicken Alfredo">
-                <h2>Chicken Alfredo</h2>
-                <p>Rich creamy Alfredo sauce served over chicken and pasta.</p>
-                <a href="https://www.foodnetwork.com/recipes/food-network-kitchen/chicken-alfredo-recipe-2106759">Full
-                    Recipe</a>
+            <div class="recipe-card lunch">
+                <img src="https://www.example.com/turkey-sandwich.jpg" alt="Turkey Sandwich">
+                <h3>Turkey Sandwich</h3>
+                <a href="https://www.example.com/turkey-sandwich-recipe" target="_blank">View Recipe</a>
             </div>
-            <div class="recipe-item dinner">
-                <img src="https://via.placeholder.com/400x300" alt="Beef Stir Fry">
-                <h2>Beef Stir Fry</h2>
-                <p>Tender beef stir-fried with vegetables in a savory sauce.</p>
-                <a href="https://www.allrecipes.com/recipe/231702/beef-stir-fry/">Full Recipe</a>
+            <div class="recipe-card lunch">
+                <img src="https://www.example.com/caesar-salad.jpg" alt="Caesar Salad">
+                <h3>Caesar Salad</h3>
+                <a href="https://www.example.com/caesar-salad-recipe" target="_blank">View Recipe</a>
             </div>
-            <div class="recipe-item dinner">
-                <img src="https://via.placeholder.com/400x300" alt="Lasagna">
-                <h2>Lasagna</h2>
-                <p>Layers of pasta, cheese, and meat sauce baked to perfection.</p>
-                <a href="https://www.allrecipes.com/recipe/23600/classic-lasagna/">Full Recipe</a>
+            <div class="recipe-card lunch">
+                <img src="https://www.example.com/quinoa-bowl.jpg" alt="Quinoa Bowl">
+                <h3>Quinoa Bowl</h3>
+                <a href="https://www.example.com/quinoa-bowl-recipe" target="_blank">View Recipe</a>
             </div>
-            <div class="recipe-item dinner">
-                <img src="https://via.placeholder.com/400x300" alt="Vegetable Curry">
-                <h2>Vegetable Curry</h2>
-                <p>A medley of vegetables simmered in a fragrant curry sauce.</p>
-                <a href="https://www.allrecipes.com/recipe/232524/vegetable-curry/">Full Recipe</a>
+        </section>
+
+        <section id="dinner">
+            <h2>Dinner</h2>
+            <div class="recipe-card dinner">
+                <img src="https://www.example.com/spaghetti-bolognese.jpg" alt="Spaghetti Bolognese">
+                <h3>Spaghetti Bolognese</h3>
+                <a href="https://www.example.com/spaghetti-bolognese-recipe" target="_blank">View Recipe</a>
             </div>
-            <div class="recipe-item dinner">
-                <img src="https://via.placeholder.com/400x300" alt="Chicken Parmesan">
-                <h2>Chicken Parmesan</h2>
-                <p>Breaded chicken topped with marinara sauce and melted cheese.</p>
-                <a href="https://www.allrecipes.com/recipe/228319/chicken-parmesan/">Full Recipe</a>
+            <div class="recipe-card dinner">
+                <img src="https://www.example.com/lasagna.jpg" alt="Lasagna">
+                <h3>Lasagna</h3>
+                <a href="https://www.example.com/lasagna-recipe" target="_blank">View Recipe</a>
             </div>
-            <div class="recipe-item dinner">
-                <img src="https://via.placeholder.com/400x300" alt="Pork Chops">
-                <h2>Pork Chops</h2>
-                <p>Juicy pork chops with a delicious apple sauce.</p>
-                <a href="https://www.allrecipes.com/recipe/16427/pork-chops-with-apple-sauce/">Full Recipe</a>
+            <div class="recipe-card dinner">
+                <img src="https://www.example.com/chicken-curry.jpg" alt="Chicken Curry">
+                <h3>Chicken Curry</h3>
+                <a href="https://www.example.com/chicken-curry-recipe" target="_blank">View Recipe</a>
             </div>
-            <div class="recipe-item dinner">
-                <img src="https://via.placeholder.com/400x300" alt="Beef Tacos">
-                <h2>Beef Tacos</h2>
-                <p>Ground beef, cheese, lettuce, and salsa in a crunchy shell.</p>
-                <a href="https://www.allrecipes.com/recipe/21353/beef-tacos/">Full Recipe</a>
+            <div class="recipe-card dinner">
+                <img src="https://www.example.com/grilled-salmon.jpg" alt="Grilled Salmon">
+                <h3>Grilled Salmon</h3>
+                <a href="https://www.example.com/grilled-salmon-recipe" target="_blank">View Recipe</a>
+            </div>
+            <div class="recipe-card dinner">
+                <img src="https://www.example.com/steak.jpg" alt="Steak">
+                <h3>Steak</h3>
+                <a href="https://www.example.com/steak-recipe" target="_blank">View Recipe</a>
+            </div>
+        </section>
+
+        <section id="dessert">
+            <h2>Desserts</h2>
+            <div class="recipe-card dessert">
+                <img src="https://www.example.com/chocolate-cake.jpg" alt="Chocolate Cake">
+                <h3>Chocolate Cake</h3>
+                <a href="https://www.example.com/chocolate-cake-recipe" target="_blank">View Recipe</a>
+            </div>
+            <div class="recipe-card dessert">
+                <img src="https://www.example.com/ice-cream.jpg" alt="Ice Cream">
+                <h3>Ice Cream</h3>
+                <a href="https://www.example.com/ice-cream-recipe" target="_blank">View Recipe</a>
+            </div>
+            <div class="recipe-card dessert">
+                <img src="https://www.example.com/apple-pie.jpg" alt="Apple Pie">
+                <h3>Apple Pie</h3>
+                <a href="https://www.example.com/apple-pie-recipe" target="_blank">View Recipe</a>
+            </div>
+            <div class="recipe-card dessert">
+                <img src="https://www.example.com/chocolate-mousse.jpg" alt="Chocolate Mousse">
+                <h3>Chocolate Mousse</h3>
+                <a href="https://www.example.com/chocolate-mousse-recipe" target="_blank">View Recipe</a>
+            </div>
+            <div class="recipe-card dessert">
+                <img src="https://www.example.com/cupcakes.jpg" alt="Cupcakes">
+                <h3>Cupcakes</h3>
+                <a href="https://www.example.com/cupcakes-recipe" target="_blank">View Recipe</a>
+            </div>
+        </section>
+
+        <section id="non-alcoholic">
+            <h2>Non-Alcoholic Drinks</h2>
+            <div class="recipe-card non-alcoholic">
+                <img src="https://www.example.com/smoothie.jpg" alt="Smoothie">
+                <h3>Smoothie</h3>
+                <a href="https://www.example.com/smoothie-recipe" target="_blank">View Recipe</a>
+            </div>
+            <div class="recipe-card non-alcoholic">
+                <img src="https://www.example.com/fresh-juice.jpg" alt="Fresh Juice">
+                <h3>Fresh Juice</h3>
+                <a href="https://www.example.com/fresh-juice-recipe" target="_blank">View Recipe</a>
+            </div>
+            <div class="recipe-card non-alcoholic">
+                <img src="https://www.example.com/mint-lemonade.jpg" alt="Mint Lemonade">
+                <h3>Mint Lemonade</h3>
+                <a href="https://www.example.com/mint-lemonade-recipe" target="_blank">View Recipe</a>
+            </div>
+            <div class="recipe-card non-alcoholic">
+                <img src="https://www.example.com/coconut-water.jpg" alt="Coconut Water">
+                <h3>Coconut Water</h3>
+                <a href="https://www.example.com/coconut-water-recipe" target="_blank">View Recipe</a>
+            </div>
+            <div class="recipe-card non-alcoholic">
+                <img src="https://www.example.com/iced-tea.jpg" alt="Iced Tea">
+                <h3>Iced Tea</h3>
+                <a href="https://www.example.com/iced-tea-recipe" target="_blank">View Recipe</a>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Recipe Hub. All Rights Reserved.</p>
+        <p>&copy; 2025 Recipe Wonderland. All Rights Reserved.</p>
     </footer>
 
     <script src="script.js"></script>
